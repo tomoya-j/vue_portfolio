@@ -9,6 +9,7 @@
         <v-tabs color="white" right>
           <v-tab to="/">HOME</v-tab>
           <v-tab to="/about">ABOUT</v-tab>
+          <v-tab to="/skills">SKILLS</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
