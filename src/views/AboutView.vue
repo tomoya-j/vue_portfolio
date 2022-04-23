@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about-container">
     <h1 class="about-ttl">About me</h1>
     <div class="about-main">
       <img
@@ -7,14 +7,7 @@
         class="about-img"
         alt="プロフィール写真"
       />
-      <v-card
-        class="about-card"
-        elevation="5"
-        shaped
-        width="550px"
-        height="400px"
-        right
-      >
+      <v-card class="about-card" elevation="5" shaped right>
         <h2 class="about-card_info">Profile</h2>
         <h3 class="about-card_info">Name : Arai Tomoya</h3>
         <h3 class="about-card_info">BirthYear : 1998</h3>
@@ -37,63 +30,75 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=PT+Serif:ital@1&display=swap");
 
-.about-ttl {
-  display: flex;
-  height: 100px;
-  font-size: 50px;
-  color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  margin: 0 100px 0 100px;
-  border-bottom: 1px solid #fff;
-  font-family: "PT Serif", serif;
-}
-.about-main {
-  display: flex;
-  position: relative;
+.about-container {
+  margin: 0 auto;
+  width: 85%;
 
-  .about-img {
-    position: absolute;
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    top: 100px;
-    left: 180px;
+  .about-ttl {
+    height: 20%;
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+    border-bottom: 1px solid #fff;
+    font-family: "PT Serif", serif;
   }
 
-  .about-card {
-    position: absolute;
-    top: 100px;
-    left: 700px;
-    font-family: "PT Serif", serif;
-    color: rgb(118, 114, 114);
+  .about-main {
+    display: flex;
+    flex-wrap: wrap;
 
-    &_ttl {
-      width: 500px;
-      margin: 0 auto;
-      text-align: center;
-      border-bottom: 1px solid rgb(104, 101, 101);
-      color: rgb(118, 114, 114);
+    .about-img {
+      margin: 5%;
+      border-radius: 50%;
+      height: 35%;
+      width: 35%;
+      @media screen and(max-width:480px) {
+        width: 90%;
+        height: 90%;
+      }
     }
 
-    .v-application p {
-      margin-bottom: 0px;
-    }
-
-    &_info {
+    .about-card {
+      margin: 5%;
+      font-family: "PT Serif", serif;
       color: rgb(118, 114, 114);
-      font-size: 20px;
-      padding: 8px 0px 0px 25px;
-      font-weight: 200;
-    }
+      width: 40%;
+      height: 60%;
+      @media screen and(max-width:480px) {
+        width: 100%;
+        height: 30%;
+      }
 
-    &_comment {
-      width: 500px;
-      margin: 0 auto;
-      color: rgb(118, 114, 114);
-      font-size: 17px;
-      padding: 8px;
-      border-top: 1px solid rgb(118, 114, 114);
+      .v-application p {
+        margin-bottom: 0px;
+      }
+
+      &_info {
+        color: rgb(118, 114, 114);
+        font-size: 20px;
+        padding: 8px 0px 0px 25px;
+        font-weight: 200;
+        @media screen and(max-width:480px) {
+          width: 100%;
+          height: 30%;
+          font-size: 17px;
+          font-weight: 150;
+        }
+      }
+
+      &_comment {
+        width: 85%;
+        margin: 0 auto;
+        color: rgb(118, 114, 114);
+        font-size: 17px;
+        padding: 8px;
+        border-top: 1px solid rgb(118, 114, 114);
+        @media screen and(max-width:480px) {
+          width: 100%;
+          height: 20%;
+          font-size: 15px;
+        }
+      }
     }
   }
 }
