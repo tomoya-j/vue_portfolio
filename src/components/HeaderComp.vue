@@ -5,13 +5,11 @@
 
       <v-spacer></v-spacer>
 
-      <template>
-        <v-tabs color="white" right>
-          <v-tab to="/">HOME</v-tab>
-          <v-tab to="/about">ABOUT</v-tab>
-          <v-tab to="/skills">SKILLS</v-tab>
-        </v-tabs>
-      </template>
+      <v-tabs color="white" right>
+        <v-tab v-for="item in items" :key="item.link" :to="item.link">
+          <span class="white--text">{{ item.name }}</span>
+        </v-tab>
+      </v-tabs>
     </v-app-bar>
   </v-app>
 </template>
@@ -19,6 +17,25 @@
 <script>
 export default {
   name: "HeaderComp",
+
+  data() {
+    return {
+      items: [
+        {
+          name: "HOME",
+          link: "/",
+        },
+        {
+          name: "ABOUT",
+          link: "/about",
+        },
+        {
+          name: "SKILLS",
+          link: "/skills",
+        },
+      ],
+    };
+  },
 };
 </script>
 
