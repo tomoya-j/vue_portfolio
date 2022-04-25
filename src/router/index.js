@@ -33,6 +33,12 @@ const routes = [
     component: () => import("../views/WorkView.vue"),
     meta: { index: 3 },
   },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () => import("../views/ContactView.vue"),
+    meta: { index: 4 },
+  },
 ];
 
 const router = new VueRouter({

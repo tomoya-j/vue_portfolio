@@ -37,6 +37,10 @@ export default {
           name: "WORK",
           link: "/work",
         },
+        {
+          name: "CONTACT",
+          link: "/contact",
+        },
       ],
     };
   },
