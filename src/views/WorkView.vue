@@ -58,22 +58,43 @@ export default {
       width: 25%;
       height: 60%;
 
+      @media screen and(max-width:480px) {
+        width: 80%;
+        height: 25%;
+      }
+
       &_ttl {
         justify-content: center;
         border-bottom: 1px solid rgb(118, 114, 114);
         margin: 2%;
         padding: 0px;
+
+        @media screen and(max-width:480px) {
+          width: 100%;
+          height: 30px;
+          padding: 0;
+        }
       }
 
       &_img {
         margin: 2%;
         width: 96%;
         height: 96%;
+
+        @media screen and(max-width:480px) {
+          height: 100px;
+        }
       }
 
       &_comment {
         margin: 0 5% 5% 5%;
         height: 130px;
+
+        @media screen and(max-width:480px) {
+          width: 90%;
+          height: 60px;
+          font-size: 5px;
+        }
       }
 
       &_progress {
