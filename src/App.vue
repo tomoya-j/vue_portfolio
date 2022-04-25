@@ -29,7 +29,6 @@ export default {
   },
   watch: {
     $route(to, from) {
-      // アニメーションの切り替え
       if (to.meta.index > from.meta.index) {
         this.transition.enter =
           "animate__animated animate__fadeInRight animate__faster";

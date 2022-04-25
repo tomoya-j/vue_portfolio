@@ -27,6 +27,12 @@ const routes = [
     component: () => import("../views/SkillsView.vue"),
     meta: { index: 2 },
   },
+  {
+    path: "/work",
+    name: "work",
+    component: () => import("../views/WorkView.vue"),
+    meta: { index: 3 },
+  },
 ];
 
 const router = new VueRouter({

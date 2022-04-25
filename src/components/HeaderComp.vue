@@ -33,6 +33,10 @@ export default {
           name: "SKILLS",
           link: "/skills",
         },
+        {
+          name: "WORK",
+          link: "/work",
+        },
       ],
     };
   },
