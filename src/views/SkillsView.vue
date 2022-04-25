@@ -76,6 +76,10 @@ export default {};
     display: flex;
     flex-wrap: wrap;
 
+    @media screen and(max-width:480px) {
+      justify-content: center;
+    }
+
     .skills-card {
       margin: 2.5%;
       font-family: "PT Serif", serif;
@@ -83,9 +87,20 @@ export default {};
       width: 20%;
       height: 60%;
 
+      @media screen and(max-width:480px) {
+        width: 40%;
+        height: 20%;
+      }
+
       &_ttl {
         justify-content: center;
         border-bottom: 1px solid rgb(118, 114, 114);
+
+        @media screen and(max-width:480px) {
+          width: 100%;
+          height: 30px;
+          padding: 0;
+        }
       }
 
       &_icon {
@@ -98,6 +113,12 @@ export default {};
         margin: 0 5% 5% 5%;
         border-top: 1px solid rgb(118, 114, 114);
         height: 200px;
+
+        @media screen and(max-width:480px) {
+          width: 90%;
+          height: 120px;
+          font-size: 5px;
+        }
       }
     }
   }
