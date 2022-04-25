@@ -50,6 +50,11 @@ export default {
       width: 50%;
       height: 200px;
 
+      @media screen and(max-width:480px) {
+        width: 85%;
+        height: 200px;
+      }
+
       &_ttl {
         justify-content: center;
         margin: 0 5%;
@@ -61,10 +66,21 @@ export default {
         width: 47%;
         margin: 0 auto;
         padding: 10px;
+
+        @media screen and(max-width:480px) {
+          width: 95%;
+          height: 50px;
+        }
       }
       &_adress {
         display: block;
         margin: 2% 25%;
+
+        @media screen and(max-width:480px) {
+          margin: 0 auto;
+          width: 90%;
+          height: 30px;
+        }
       }
     }
   }
