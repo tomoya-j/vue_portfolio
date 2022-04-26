@@ -26,7 +26,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 概要
 
-vue.jsを使ってspaのプロフィールサイトを作ります。
+Vue.jsを使ってspaのプロフィールサイトを作ります。
 環境構築はnpmとVue CLIを使い行います。
 
 ルーティング設定とUIデザインはVuerouterとVuetifyを使って行います。
+
+レスポンシブ対応としてiPhoneXRとiPhone12に対応させました。
