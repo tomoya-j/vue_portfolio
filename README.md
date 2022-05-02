@@ -1,4 +1,5 @@
 # vue_portfolio
+https://tomoya-vueportfolio.netlify.app/
 
 ## Project setup
 ```
@@ -32,3 +33,4 @@ Vue.jsを使ってspaのプロフィールサイトを作ります。
 ルーティング設定とUIデザインはVuerouterとVuetifyを使って行います。
 
 レスポンシブ対応としてiPhoneXRとiPhone12に対応させました。
+また、Netlifyでデプロイをしました。
